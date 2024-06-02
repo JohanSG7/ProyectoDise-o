@@ -1,0 +1,117 @@
+/*ESTILOS LOGIN PAGE--------------------------------------------------------------------------------------*/
+body{
+    height: 100vh;
+}
+section {
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+#contenedorDiseno {
+    display: flex;
+    flex-basis: 50%;
+    background: rgb(0,224,255);
+    background: linear-gradient(0deg, rgba(0,224,255,1) 0%, rgba(54,126,188,1) 100%);
+}
+#contenedorOla {
+    display: flex;
+    flex-basis: 20%;
+}
+#contenedorOla img {
+    width: 100%;
+}
+#contenedorContenido {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    position: relative;
+}
+#contenedorPuntos img{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+#picos {
+    position: absolute;
+    bottom: 0;
+}
+#contenido1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 130px 95px;
+}
+#contenido1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contenido1 div h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+.logo {
+    width: 100px;
+    height: 120px;
+}
+#contenedorLogin {
+    flex-basis: 50%;
+}
+#logoLabelAurora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contenedorPrincipalLogin {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 200px;
+}
+h1 {
+    color: black;
+    font-size: 64px;
+    font-weight: bold;
+}
+.contenedor {
+    border-bottom:1px solid #367EBC;
+    margin-top: 50px;
+}
+.contenedor label {
+    color: black;
+}
+.contenedor input {
+    width: 100%;
+    border: 0px;
+    color: black;
+}
+.contenedor input:focus {
+    outline: none;
+}
+#ingresar {
+    background-color: #367EBC;
+    border-radius: 10px;
+    width: 132px;
+    border: 0px;
+    height: 38px;
+    margin:0px auto;
+    margin-top: 70px;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media (max-width:1400px) {
+    #picos{
+        display: none;
+    }
+}
+@media (max-width:900px) {
+    #contenedorDiseno{
+        display: none;
+    }
+    #contenedorLogin {
+        flex-basis: 100%;
+    }
+}

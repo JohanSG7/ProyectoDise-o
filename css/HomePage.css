@@ -1,0 +1,111 @@
+/*ESTILOS HOME PAGE-----------------------------------------------------------------------------------------*/
+#bodyHome{
+    visibility: hidden;
+}
+#headerHome{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+#formularioHeader button{
+    margin:0px 5px;
+}
+#carouselExampleCaptions,.carousel-item{
+    height: 93vh;
+}
+#crearCuenta,#iniciarSesion{
+    color: #367EBC;
+    border: 1px solid #367EBC;
+    transition: all 500ms;
+}
+#crearCuenta:hover,#iniciarSesion:hover{
+    background-color: #367EBC;
+    color:white;
+}
+#formularioHeader button a {
+    text-decoration: none;
+    color: #367EBC;
+}
+#crearCuenta:hover a, #iniciarSesion:hover a{
+    color: white;
+}
+#crearCuenta a:hover, #iniciarSesion a:hover{
+    color: white;
+}
+#contenedorNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#contenedorNosotros > * {
+    padding: 20px;
+}
+#contenedorNosotros > * > * > * > *{
+    color: black;
+    text-align: center;
+}
+#contenedorNosotros div div p {
+    text-align: left;
+}
+#contenedorMision, #contenedorVision {
+    display: flex;
+    flex-basis:100%;
+    flex-direction: column;
+    justify-content: center;
+}
+#contenedorMision > *, #contenedorVision > * {
+    width:60%;
+    padding: 30px;
+    font-size:1.3rem;
+}
+#contenedorMision div h2, #contenedorVision div h2 {
+    font-size:3rem;
+    font-weight: bold;
+}
+#contenedorMision {
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+#contenedorVision{
+    align-items: flex-end;
+    background-color: #337CBB;
+    padding-top: 50px;
+}
+#contenedorVision div > * {
+    color: white;
+}
+.containerImagen {
+    width: 100%;
+    text-align: center;
+}
+.containerImagen img {
+    width: 50%;
+}
+@media (max-width:1000px) {
+    #contenedorMision:first-child > div, .contenedorInfoVision{
+        width: 100% !important;
+        display: flex;
+    }
+    .contenedorInfoVision {
+        flex-direction: row-reverse;
+    }
+    .contenedorInfo, .containerImagen {
+        width: 50%;
+    }
+    .containerImagen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containerImagen img {
+        width: 100%;
+    }
+}
+@media (max-width:700px) {
+    .containerImagen {
+        display: none;
+    }
+    .contenedorInfo {
+        width: 100%;
+    }
+}
