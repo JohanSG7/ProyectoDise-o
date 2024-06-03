@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de Hotel</title>
+    <link rel="stylesheet" href="calendario_estilos.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nombre">Aurora Hotel</div>
+        <div class="menu-opciones">
+            <a href="#">Calendario</a>
+            <a href="#">Check In</a>
+            <a href="#">Check Out</a>
+            <a href="#">Servicios</a>
+            <a href="#">Facturas</a>
+        </div>
+    </div>
+    
+    <div class="contenedor">
+        <h1>Reservas de Hotel</h1>
+        <button id="show-calendar" class="btn">Seleccionar Fecha</button>
+        <div id="date-picker" class="date-picker"></div>
+        <p>Fecha seleccionada: <span id="selected-date">Ninguna</span></p>
+        <button id="validate-date" class="btn">Validar Fecha</button>
+        <p id="validation-result"></p>
+        <button id="select-room" class="btn" style="display:none;">Seleccionar Habitación</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="calendario.js"></script>
+</body>
+</html>

@@ -15,7 +15,7 @@ $filas=mysqli_num_rows($resultado);
 
 if($filas){
   
-    header("location:gestion_empleado.html");
+    header("Location: Reserva_Disponibilidad.html");
 
 }else{
     ?>
@@ -23,7 +23,6 @@ if($filas){
     include("LoginPage.php");
 
   ?>
-  <h1 class="bad">ERROR DE AUTENTIFICACION</h1>
   <?php
 }
 mysqli_free_result($resultado);
