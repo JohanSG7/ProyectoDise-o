@@ -1,0 +1,130 @@
+#check-in-form {
+    display: none; /* Oculto por defecto */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#check-in-form input[type="text"],
+#check-in-form input[type="number"],
+#check-in-form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#check-in-form button {
+    background-color: #2e7d32; /* Verde claro */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#check-in-form button:hover {
+    background-color: #1b5e20; /* Azul marino */
+}
+
+.date-picker {
+    display: none;
+    margin-top: 10px;
+}
+
+#selected-date {
+    font-weight: bold;
+}
+
+#validation-result {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.btn {
+    background-color: #2e7d32; /* Verde claro */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #1b5e20; /* Azul marino */
+}
+
+.ui-datepicker {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.ui-datepicker-header {
+    background-color: #1b5e20; /* Azul marino */
+    color: #ffffff;
+    border-bottom: 1px solid #1b5e20;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    display: inline-block;
+    background-color: #1b5e20; /* Azul marino */
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+    background-color: #2e7d32; /* Verde claro */
+}
+
+.ui-datepicker-prev {
+    float: left;
+}
+
+.ui-datepicker-next {
+    float: right;
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+}
+
+.ui-datepicker-calendar thead {
+    background-color: #2e7d32; /* Verde claro */
+    color: #ffffff;
+}
+
+.ui-datepicker-calendar th {
+    text-align: center;
+    padding: 5px;
+}
+
+.ui-datepicker-calendar tbody td {
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.ui-datepicker-calendar tbody td:hover {
+    background-color: #f0f0f0; /* Gris claro */
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background-color: #2e7d32; /* Verde claro */
+    color: #ffffff;
+}
