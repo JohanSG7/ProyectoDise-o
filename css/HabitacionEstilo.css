@@ -1,0 +1,52 @@
+.container {
+    text-align: center;
+}
+
+.left-column, .right-column {
+    flex: 1 1 40%;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+    width: 40%; /* Ajusta el ancho según sea necesario */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo azul */
+    color: black; /* Texto negro */
+    margin: 10px 2.5%;
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+    text-align: center;
+    border-radius: 20px;
+
+    
+}
+
+.left-column {
+    flex: 1 1 40%;
+    display: inline-block;
+    vertical-align: top;
+    width: 40%; /* Ajusta el ancho según sea necesario */
+    padding: 20px;
+    background-color: #00968e; /* Fondo azul */
+    color: black; /* Texto negro */
+    margin: 10px 2.5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.left-column img, .right-column img {
+    width: 100%; /* Asegura que las imágenes ocupen el 100% del contenedor padre */
+    height: 100%; /* Mantiene la proporción de la imagen */
+    max-width: 500px; /* Ajusta según sea necesario para limitar el tamaño máximo */
+    display: block;
+    margin: 0 auto 10px; /* Centra la imagen y añade margen inferior */
+    border-radius: 20px;
+}
+@media (max-width: 768px) {
+    .left-column, .right-column {
+        flex: 1 1 100%; /* Toma el 100% del ancho en pantallas pequeñas */
+        margin: 10px 0; /* Ajusta el margen para pantallas pequeñas */
+    }
+}
+
+.modal-content {
+    padding: 40px;
+    background-color: #00968e; 
+}
