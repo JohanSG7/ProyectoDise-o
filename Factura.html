@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de Hotel</title>
+    <link rel="stylesheet" href="calendario_estilos.css">
+    <link rel="stylesheet" href="StylesFactura.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="nombre">Aurora Hotel</div>
+        <div class="menu-opciones">
+            <a href="#">Calendario</a>
+            <a href="#">Check In</a>
+            <a href="#">Check Out</a>
+            <a href="#">Servicios</a>
+            <a href="#">Facturas</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1>Facturación de Hotel Aurora</h1>
+        <form action="FacturaDatos.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre del Cliente:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="habitacion">Tipo de Habitación:</label>
+                <select id="habitacion" name="habitacion" required>
+                    <option value="Deluxe">Deluxe</option>
+                    <option value="Presidencial">Presidencial</option>
+                    <option value="Familiar">Familiar</option>
+                    <option value="Superior">Superior</option>
+                    <option value="Ejecutiva">Ejecutiva</option>
+                    <option value="Estándar">Estándar</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Jardín">Acceso al Jardín</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dias">Número de Días:</label>
+                <input type="number" id="dias" name="dias" required>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio por Noche:</label>
+                <input type="number" id="precio" name="precio" required>
+            </div>
+            <button type="submit" class="btn">Generar Factura</button>
+        </form>
+
+        <h2>Buscar Factura</h2>
+        <form action="EditarFactura.php" method="post">
+            <div class="form-group">
+                <label for="search">ID de la Factura:</label>
+                <input type="number" id="search" name="id" required>
+            </div>
+            <button type="submit" class="btn">Buscar</button>
+        </form>
+    </div>
+</body>
+</html>
