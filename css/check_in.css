@@ -18,7 +18,7 @@
 }
 
 #check-in-form button {
-    background-color: #2e7d32; /* Verde claro */
+    background-color: #399696; /* Verde claro */
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -28,7 +28,7 @@
 }
 
 #check-in-form button:hover {
-    background-color: #1b5e20; /* Azul marino */
+    background-color: #53b2df; /* Azul marino */
 }
 
 .date-picker {

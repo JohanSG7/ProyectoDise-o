@@ -8,30 +8,14 @@
     <link rel="stylesheet" href="css/LoginPage.css">
 </head>
 <body>
-    <section>
-        <div id="contenedorDiseno">
-            <div id="contenedorOla">
-                <img src="img/waveLogin.png" alt="" id="ola">
-            </div>
-            <div id="contenedorContenido">
-                <div id="contenedorPuntos">
-                    <img src="img/puntosLogin.svg" alt="">
-                </div>
-                <div id="contenido1">
-                    <div>
-                        <img src="img/logo.svg" alt="" class="logo">
-                        <h2>¡Tu destino digital comienza aqui!</h2>
-                        <img src="img/hotelLogin.png" alt="">
-                    </div>
-                    <img src="img/picosLogin.svg" alt="" id="picos">
-                </div>
-            </div>
-        </div>
+<div class="header">
+        <div class="nombre">Hotel Aurora</div>
+</div>
         <div id="contenedorLogin">
             <div id="contenedorPrincipalLogin">
                 <div id="logoLabelAurora">
                     <img src="img/Logo2.svg" alt="" class="logo">
-                    <h1>Aurora</h1>
+                        <h1>Bienvenido a Nuestro Hotel</h1>
                 </div>
                 <form action="conex.php" method="post">
                 <div class="contenedor form-floating" style="margin-top: 120px;">

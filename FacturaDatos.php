@@ -1,8 +1,11 @@
+<head> 
+<link rel="stylesheet" type="text/css" href="estilos_factura.css"> 
+</head> 
 <?php
 $servername = "localhost";
 $username = "root"; // Cambia esto por tu nombre de usuario de MySQL
 $password = ""; // Cambia esto por tu contraseña de MySQL
-$dbname = "hotel_facts";
+$dbname = "aurora hotel";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -19,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $precio = $_POST['precio'];
     $total = $dias * $precio;
 
-    $sql = "INSERT INTO facturas (nombre, habitacion, dias, precio, total) VALUES ('$nombre', '$habitacion', $dias, $precio, $total)";
+    $sql = "INSERT INTO factura (nombre, tipo_habitacion, cantidad_dias, precio_noche, total) VALUES ('$nombre', '$habitacion', $dias, $precio, $total)";
 
     if ($conn->query($sql) === TRUE) {
         $last_id = $conn->insert_id;

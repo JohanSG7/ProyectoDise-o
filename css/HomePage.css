@@ -3,6 +3,8 @@
     visibility: hidden;
 }
 #headerHome{
+    color: #00968e;
+    background-image: linear-gradient(to bottom, #00968e, #ffffff);
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -24,7 +26,7 @@
 }
 #formularioHeader button a {
     text-decoration: none;
-    color: #367EBC;
+    color: #4e9faf;
 }
 #crearCuenta:hover a, #iniciarSesion:hover a{
     color: white;
@@ -36,9 +38,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-image: linear-gradient(to bottom, #00968e, #ffffff);
+
 }
 #contenedorNosotros > * {
     padding: 20px;
+    background-image: linear-gradient(to bottom, #00968e, #ffffff);
 }
 #contenedorNosotros > * > * > * > *{
     color: black;
@@ -63,7 +68,7 @@
     font-weight: bold;
 }
 #contenedorMision {
-    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #00968e, #ffffff);
     padding-top: 50px;
 }
 #contenedorVision{
@@ -72,7 +77,7 @@
     padding-top: 50px;
 }
 #contenedorVision div > * {
-    color: white;
+    background-image: linear-gradient(to bottom, #00968e, #ffffff);
 }
 .containerImagen {
     width: 100%;
